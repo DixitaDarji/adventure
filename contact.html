@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+	<!--  CSS  -->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<nav class="navbar">
+		<h1 class="logo">ADVENTURE</h1>
+		<ul class="nav-links">
+			<li class="active"><a href="#Home"></a>Home</li>
+			<li><a href="index.html">Events</a></li>
+			<li><a href="index.html">Explore</a></li>
+			<li><a href="index.html">Tours</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li class="ctn"><a href="#contact">Contact </a></li>
+		</ul>
+ <img src="./img/menu-btn.png" alt="" class="menu-btn">
+
+	</nav>
+	<header>
+		<div class="header-content">
+			<h2>Explore The Colorful World</h2>
+			<div class="line"></div>
+			<h1>A WONDERFUL GIFT</h1>
+			<a href="#" class="ctn">Learn More</a>
+		</div>
+	</header>
+	<section class="faq">
+		<div class="title">
+			<h1 id="contact">Contact Info</h1>
+			<div class="line"></div>
+		</div>
+		<div class="container">
+		  <form action="./index.html">
+		    <label for="fname">First Name</label>
+		    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+		    <label for="lname">Last Name</label>
+		    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+		    <label for="country">Country</label>
+		    <select id="country" name="country">
+		      <option value="australia">Australia</option>
+		      <option value="canada">Canada</option>
+		      <option value="usa">USA</option>
+		    </select>
+
+		    <label for="subject">Subject</label>
+		    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+		    <input type="submit" value="Submit">
+		  </form>
+		</div>
+
+	</section>
+	<section class="footer">
+		<p> Copyright 2022 Outdoor Adventure</p>
+		
+	</section>
+	<script>
+		const menuBtn=document.querySelector('.menu-btn');
+		const navlinks=document.querySelector('.nav-links');
+
+		menuBtn.addEventListener('click',()=>{
+			navlinks.classList.toggle('mobile-menu')
+		})
+	</script>
+</body>
