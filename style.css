@@ -52,12 +52,13 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	color:lightblue;
 
 
 }
 .header-content{
 	margin-bottom: 150px;
-	color: pink;
+	color: whitesmoke;
 	text-align: center;
 }
 
